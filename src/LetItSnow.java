@@ -14,7 +14,7 @@ public class LetItSnow {
     private JFrame frame;
     private DrawPanel3 drawPanel = new DrawPanel3();
     private int sizeoval = 60;
-    int a = 0;
+
     private int numOfFlakes = 400;
     private int FALLINGSPEED = 6;
 

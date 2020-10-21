@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="727559c9-9155-4673-8562-977863ce5a7f" name="Default Changelist" comment="" />
+    <list default="true" id="727559c9-9155-4673-8562-977863ce5a7f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StarWars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TricksInUI/LetItSnow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TricksInUI/LetItSnow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LetItSnow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LetItSnow.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +23,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\Xiaomi\IdeaProjects\TricksInUI\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1iv1pmS8p0kuiRCoAlri1WZmn8b" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -25,6 +39,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
@@ -33,7 +48,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PlanetAnim">
+  <component name="RunManager" selected="Application.StarWars">
     <configuration name="CircleAndCubic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CircleAndCubic" />
       <module name="TricksInUI" />
@@ -55,11 +70,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StarWars" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="starwars.StarWars" />
+      <module name="TricksInUI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="starwars.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StarWars" />
+        <item itemvalue="Application.LetItSnow" />
         <item itemvalue="Application.PlanetAnim" />
         <item itemvalue="Application.CircleAndCubic" />
-        <item itemvalue="Application.LetItSnow" />
       </list>
     </recent_temporary>
   </component>
@@ -85,7 +114,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602773436102</updated>
-      <workItem from="1602773440227" duration="1264000" />
+      <workItem from="1602773440227" duration="6691000" />
+      <workItem from="1603054479252" duration="18000" />
+      <workItem from="1603200105716" duration="1312000" />
+      <workItem from="1603220703444" duration="1993000" />
     </task>
     <servers />
   </component>
@@ -93,21 +125,25 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1237" height="166" key="GridCell.Tab.0.bottom" timestamp="1602774700145">
+    <state width="1237" height="2" key="GridCell.Tab.0.bottom" timestamp="1602925298589">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1602774700145" />
-    <state width="1237" height="166" key="GridCell.Tab.0.center" timestamp="1602774700145">
+    <state width="1237" height="2" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1602925298589" />
+    <state width="1237" height="2" key="GridCell.Tab.0.center" timestamp="1602925298589">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1602774700145" />
-    <state width="1237" height="166" key="GridCell.Tab.0.left" timestamp="1602774700145">
+    <state width="1237" height="2" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1602925298589" />
+    <state width="1237" height="2" key="GridCell.Tab.0.left" timestamp="1602925298589">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1602774700145" />
-    <state width="1237" height="166" key="GridCell.Tab.0.right" timestamp="1602774700145">
+    <state width="1237" height="2" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1602925298589" />
+    <state width="1237" height="2" key="GridCell.Tab.0.right" timestamp="1602925298589">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1602774700145" />
+    <state width="1237" height="2" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1602925298589" />
+    <state x="233" y="82" key="Vcs.Push.Dialog.v2" timestamp="1602774915649">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="233" y="82" key="Vcs.Push.Dialog.v2/0.0.1280.689@0.0.1280.689" timestamp="1602774915649" />
   </component>
 </project>
