@@ -44,14 +44,15 @@ public class LetItSnow {
     public void initArray(){
         for (int o = 0; o<numOfFlakes; o++){
             //Also init all the drops
-            hashMap.put(rand.nextInt(400),-rand.nextInt(400) );
+            hashMap.put(rand.nextInt(400),rand.nextInt(400) );
         }
         System.out.println(hashMap.toString());
     }
 
 
 
-
+    double angle = 90;
+    double radiusPlus = 1;
     class DrawPanel3 extends JPanel
     {
         private static final long serialVersionUID = 1L;
@@ -81,9 +82,9 @@ public class LetItSnow {
                 Integer key = e.getKey();
                 Integer value = e.getValue();
                 g.setColor(Color.WHITE);
-                g.fillOval(key,value,sizeoval,sizeoval);
-
-                e.setValue(value+rand.nextInt(2));
+                g.fillOval((int) (key*Math.cos(angle)*radiusPlus), (int) (value*Math.sin(angle)*radiusPlus),sizeoval,sizeoval);
+                radiusPlus++;
+                //e.setValue(value+rand.nextInt(2));
 
                 if (value>400){ e.setValue(1); }
             }
@@ -96,7 +97,9 @@ public class LetItSnow {
     private void moveIt() {
         for (int turn = 0; turn<360;turn++ ){
             try
-            { Thread.sleep(FALLINGSPEED); }
+            {
+                Thread.sleep(FALLINGSPEED);
+            }
             catch (Exception e) { e.printStackTrace(); }
 
             frame.repaint();

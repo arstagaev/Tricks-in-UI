@@ -20,9 +20,6 @@ public class StarWars {
     private int FALLINGSPEED = 4;
     private int REFRESHING = 300;
 
-    HashMap<Integer, Integer> hashMap = new HashMap<>();
-    ArrayList<Float> fountainX = new ArrayList<>();
-    ArrayList<Float> fountainY = new ArrayList<>();
 
     ArrayList<Double> radiansArray = new ArrayList<>();
     ArrayList<Double> speedArray = new ArrayList<>();
@@ -38,7 +35,6 @@ public class StarWars {
     {
         frame = new JFrame("by ars");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
         frame.getContentPane().add(BorderLayout.CENTER, drawPanel);
 
         frame.setResizable(true);
@@ -47,34 +43,22 @@ public class StarWars {
         frame.setVisible(true);
         initArray();
         moveIt();
-        //heartanim();
     }
     public void initArray(){
         for (int o = 0; o<numOfFlakes; o++){
-            //Also init all the drops
-            //hashMap.put(rand.nextInt(400),-rand.nextInt(400) );
-            fountainX.add(100*rand.nextFloat());
-            fountainY.add(100*rand.nextFloat());
 
-            radiansArray.add(Math.toRadians(rand.nextDouble()*360));//***
+            radiansArray.add(Math.toRadians(rand.nextDouble()*360)); //***
             speedArray.add(rand.nextDouble()*4);
             orbitArrayX.add(rand.nextDouble()*100);
 
         }
-        System.out.println(fountainX.toString());
+
     }
 
-    int directionCtrl = 2;
+
     int timeInterval = 0;
 
-    double orbitRadius = 50;
-    double orbitSpeed = Math.PI / 90;
-    double sphereRadius = 10;
 
-    float currentElementX =100;
-    float currentElementY= 100;
-
-    double radian = 0;
     class DrawPanel6 extends JPanel
     {
         private static final long serialVersionUID = 1L;
@@ -89,7 +73,7 @@ public class StarWars {
             g.setColor(Color.BLACK);
             g.fillRect(0, 0, this.getWidth(), this.getHeight());
 
-            for (int i = 0; i<fountainX.size(); i++){
+            for (int i = 0; i<orbitArrayX.size(); i++){
 
 //                g.setColor(Color.GREEN);
 //                g.drawLine(50,50,150,50);

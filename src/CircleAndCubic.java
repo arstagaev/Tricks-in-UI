@@ -1,6 +1,9 @@
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 /*
 Made by @arstagaev in 2020
  */
@@ -30,8 +33,7 @@ public class CircleAndCubic {
         new CircleAndCubic().go();
     }
 
-    private void go()
-    {
+    private void go() {
         frame = new JFrame("Test");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -43,7 +45,7 @@ public class CircleAndCubic {
         frame.setSize(300, 300);
         frame.setLocationByPlatform(true);
         frame.setVisible(true);
-        moveIt();
+
         //heartanim();
     }
 
@@ -51,7 +53,23 @@ public class CircleAndCubic {
 
     class DrawPanel4 extends JPanel
     {
-        private static final long serialVersionUID = 1L;
+        //private static final long serialVersionUID = 1L;
+
+        public DrawPanel4() {
+            ActionListener animate = new ActionListener() {
+                public void actionPerformed(ActionEvent ae) {
+
+
+                    moveIt();
+                    repaint();
+
+                }
+
+            };
+            Timer timer = new Timer(50,animate);
+            timer.setRepeats(true);
+            timer.start();
+        }
 
         public void paintComponent(Graphics g)
         {
@@ -77,6 +95,10 @@ public class CircleAndCubic {
 
             g.setColor(Color.RED);
             g.fillOval(ovalX-sizeoval/2,ovalY-sizeoval/2,1+sizeoval,1+sizeoval);
+
+
+
+            //repaint();
         }
     }
 
@@ -103,37 +125,42 @@ public class CircleAndCubic {
 
     private void moveIt() {
 
-        for (int a = 0; a<300; a++){
-
-
-            if (increase){
-                increaseOval();
-            }else{
-                decreaseOval();
-            }
-
-            if (oneX==230){
-                goToRight = false;
-                a = 0;
-            } else if(oneX == 0){
-                goToRight = true;
-                a = 0;
-            }
-
-            if (goToRight){
-                toRight();
-            }else {
-                toLeft();
-            }
-
-
-            try
-            { Thread.sleep(10); }
-            catch (Exception e) { e.printStackTrace(); }
-
-
-            frame.repaint();
+        if (increase){
+            increaseOval();
+        }else{
+            decreaseOval();
         }
+
+        if (oneX==230){
+            goToRight = false;
+           // a = 0;
+        } else if(oneX == 0){
+            goToRight = true;
+           // a = 0;
+        }
+
+        if (goToRight){
+            toRight();
+        }else {
+            toLeft();
+        }
+
+//        for (int a = 0; a<300; a++){
+//
+//
+//
+//
+//
+////            try
+////            {
+////                //Thread.sleep(10);
+////
+////            }
+////            catch (Exception e) { e.printStackTrace(); }
+//
+//
+//            //frame.repaint();
+//        }
 
     }
 
