@@ -2,6 +2,8 @@ package starwars;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
@@ -61,6 +63,23 @@ public class StarWars {
 
     class DrawPanel6 extends JPanel
     {
+        public DrawPanel6() {
+            ActionListener animate = new ActionListener() {
+                public void actionPerformed(ActionEvent ae) {
+
+
+                    moveIt();
+                    repaint();
+
+                }
+
+            };
+            Timer timer = new Timer(FALLINGSPEED,animate);
+            timer.setRepeats(true);
+            timer.start();
+        }
+
+
         private static final long serialVersionUID = 1L;
         public void paintComponent(Graphics g) {
            /*
@@ -101,15 +120,15 @@ public class StarWars {
     }
 
     private void moveIt() {
-        for (int turn = 0; turn<360;turn++ ){
-            try
-            { Thread.sleep(FALLINGSPEED); }
-            catch (Exception e) { e.printStackTrace(); }
-            frame.repaint();
-            if (turn>330){
-                turn = 0;
-            }
-        }
+//        for (int turn = 0; turn<360;turn++ ){
+//            try
+//            { Thread.sleep(FALLINGSPEED); }
+//            catch (Exception e) { e.printStackTrace(); }
+//            frame.repaint();
+//            if (turn>330){
+//                turn = 0;
+//            }
+//        }
     }
 }
 
