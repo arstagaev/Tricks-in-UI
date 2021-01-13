@@ -84,7 +84,7 @@ public class LetItSnow {
                 g.setColor(Color.WHITE);
                 g.fillOval((int) (key*Math.cos(angle)*radiusPlus), (int) (value*Math.sin(angle)*radiusPlus),sizeoval,sizeoval);
                 radiusPlus++;
-                //e.setValue(value+rand.nextInt(2));
+
 
                 if (value>400){ e.setValue(1); }
             }
