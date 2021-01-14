@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="727559c9-9155-4673-8562-977863ce5a7f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/DrawWaveTrying.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,16 +36,23 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Xiaomi\IdeaProjects\TricksInUI" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.StarWars">
+  <component name="RunManager" selected="Application.DrawWaveTrying">
     <configuration name="CircleAndCubic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CircleAndCubic" />
+      <module name="TricksInUI" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DrawWaveTrying" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DrawWaveTrying" />
       <module name="TricksInUI" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -79,6 +87,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DrawWaveTrying" />
         <item itemvalue="Application.StarWars" />
         <item itemvalue="Application.LetItSnow" />
         <item itemvalue="Application.CircleAndCubic" />
@@ -110,30 +119,15 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state width="1237" height="261" key="GridCell.Tab.0.bottom" timestamp="1607596838610">
-      <screen x="0" y="0" width="1280" height="689" />
-    </state>
-    <state width="1237" height="261" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1607596838610" />
-    <state width="1237" height="261" key="GridCell.Tab.0.center" timestamp="1607596838608">
-      <screen x="0" y="0" width="1280" height="689" />
-    </state>
-    <state width="1237" height="261" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1607596838608" />
-    <state width="1237" height="261" key="GridCell.Tab.0.left" timestamp="1607596838606">
-      <screen x="0" y="0" width="1280" height="689" />
-    </state>
-    <state width="1237" height="261" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1607596838606" />
-    <state width="1237" height="261" key="GridCell.Tab.0.right" timestamp="1607596838609">
-      <screen x="0" y="0" width="1280" height="689" />
-    </state>
-    <state width="1237" height="261" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1607596838609" />
-    <state x="233" y="82" key="Vcs.Push.Dialog.v2" timestamp="1602774915649">
-      <screen x="0" y="0" width="1280" height="689" />
-    </state>
-    <state x="233" y="82" key="Vcs.Push.Dialog.v2/0.0.1280.689@0.0.1280.689" timestamp="1602774915649" />
-    <state x="91" y="0" key="new project wizard" timestamp="1607889580935">
-      <screen x="0" y="0" width="1280" height="689" />
-    </state>
-    <state x="91" y="0" key="new project wizard/0.0.1280.689@0.0.1280.689" timestamp="1607889580935" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
